@@ -1,11 +1,14 @@
-
 import React from "react";
-import './../styles/App.css';
+import { Provider } from 'react-redux'
+import Lorem from './Lorem'
+import store from './store'
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+        <Provider store={store}>
+        <Lorem />
+      </Provider>
     </div>
   )
 }
